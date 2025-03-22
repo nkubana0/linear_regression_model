@@ -29,7 +29,7 @@ class _PredictorPageState extends State<PredictorPage> {
   Future<void> _predictGPA() async {
     if (_formKey.currentState!.validate()) {
       final response = await http.post(
-        Uri.parse('http://127.0.0.1:8000/predict'),
+        Uri.parse('https://linear-regression-model-qs77.onrender.com/predict'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'Age': int.parse(ageController.text),
