@@ -29,7 +29,7 @@ class _PredictorPageState extends State<PredictorPage> {
   Future<void> _predictGPA() async {
     if (_formKey.currentState!.validate()) {
       final response = await http.post(
-        Uri.parse('https://linear-regression-model-qs77.onrender.com/predict'),
+        Uri.parse('https://flutter-linear-regression.onrender.com'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'Age': int.parse(ageController.text),
