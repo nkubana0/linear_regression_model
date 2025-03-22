@@ -28,10 +28,10 @@ Predict the **GPA** of a student based on these features.
 ## 🌐 Public API Endpoint
 The API is deployed and publicly accessible at:
 
-**[https://your-api-url.com/predict](https://your-api-url.com/predict)**
+**[https://flutter-linear-regression.onrender.com/predict](https://flutter-linear-regression.onrender.com/predict)**
 
 ### How to Test the API
-1. Open the **Swagger UI** at: [https://your-api-url.com/docs](https://your-api-url.com/docs).
+1. Open the **Swagger UI** at: [https://flutter-linear-regression.onrender.com/docs](https://flutter-linear-regression.onrender.com/docs).
 2. Use the `/predict` endpoint to send a POST request with the following JSON structure:
     ```json
     {
@@ -74,13 +74,14 @@ Watch the 2-minute demo of the project here:
     ```
 
 ### Running the Mobile App
-1. Navigate to the `mobile_app/src` directory:
+1. Navigate to the `summative/flutterapp` directory:
     ```bash
-    cd mobile_app/src
+    cd summative/flutterapp
     ```
 2. Run the app:
     ```bash
-    python main.py
+    flutter pub get
+    flutter run
     ```
 3. Open the app on your mobile device or emulator to interact with the GPA prediction feature.
 
@@ -101,12 +102,10 @@ To deploy the API:
     ```bash
     uvicorn prediction:app --host 0.0.0.0 --port 8000
     ```
-4. Deploy to a cloud platform (e.g., AWS, Heroku, or Google Cloud) for a publicly routable URL.
-
 ---
 
 ## 🛠️ Tech Stack
 - **Backend**: FastAPI
 - **Model**: Scikit-learn
 - **Frontend**: Mobile app (Python-based)
-- **Deployment**: Uvicorn, Cloud Hosting
+- **Deployment**: Uvicorn, Cloud Hosting(Render)
