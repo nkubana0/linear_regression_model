@@ -61,7 +61,7 @@ The API is deployed and publicly accessible at:
 
 ## 📹 YouTube Demo
 Watch the 2-minute demo of the project here:  
-[![YouTube Demo](https://img.youtube.com/vi/your_video_id/0.jpg)](https://www.youtube.com/watch?v=your_video_id)
+[![YouTube Demo](https://youtu.be/zwiKEVy8YX8)]([https://www.youtube.com/watch?v=your_video_id](https://youtu.be/zwiKEVy8YX8))
 
 ---
 
